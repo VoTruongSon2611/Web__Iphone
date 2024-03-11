@@ -1,0 +1,145 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col__login {
+    margin: auto;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.block-background {
+    padding: 5px 5px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0px 2px 0 rgba(60,64,67,0.1), 0 0px 6px 0px rgba(60,64,67,0.25);
+}
+
+.content__login {
+    padding: 5px;
+}
+
+.menu__list {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+    list-style: none;
+    display: flex;
+    height: 50px;
+    border-bottom: 1px solid #eee;
+}
+
+.menu__list li {
+    flex: 1 1;
+    text-align: center;
+    position: relative;
+}
+
+.menu__list a {
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.6rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.menu__list a:hover {
+    color: #000f8f;
+}
+
+
+.menu__list li.active::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 0px;
+    right: 0px;
+    bottom: -1px;
+    background-color: #000f8f;
+}
+
+.menu__list li.active a {
+    color: #000f8f;
+}
+
+.title__login {
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+.login__email {
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    border-bottom: 2px solid #000f8f;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 100%;
+    line-height: 0.5;
+    padding: 16px;
+    background-color: #000f8f;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #F3BD01;
+}
+
+.button__login span {
+    display: block;
+    font-size: 1.4rem;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.button__login span:hover {
+    cursor: pointer;
+    color: #F3BD01;
+}
+
+.social__login p {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+}
+
+.btn__social-facebook {
+    width: 50%;
+    background-color: #0866FF;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.btn__social-google {
+    width: 50%;
+    background-color: #E34033;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 10px;
+    color: #fff;
+}
+
+.btn__social-facebook:hover, .btn__social-google:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.error {
+    border-color: red;
+}

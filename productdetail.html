@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">        
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/productdetail.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.5.1-web/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="gird">
+                <!-- header navbar -->
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--separate">
+                            Chào mừng bạn đến với...
+                        </li>
+                        <li class="header__navbar-item ">
+                            <span class="header__navbar-title--no-pointer">Kết nối</span>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-solid fa-phone"></i>
+                                Hotline: 0392405260
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--has-notify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-regular fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <!-- <li class="header__navbar-item header__navbar-item--bold  header__navbar-item--separate">Đăng kí</li>
+                        <li class="header__navbar-item header__navbar-item--bold">Đăng nhập</li> -->
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="./assets/img/avata.jpg" alt="" class="header__navbar-user-avt">
+                            <span class="header__navbar-user-name">Sơn Võ</span>
+
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="dangnhap.html">Đăng nhập</a>
+                                </li>
+                                <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                    <a href="dangky.html">Đăng ký</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- header with search -->
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <a href="" class="header__logo-link">
+                            <img src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/logo.png?1702613567721" alt="Gundam Store VN" class="header__logo-img">
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+                            <!-- Search history -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Cái gì đó</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Cái gì đó</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Cái gì đó</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Cái gì đó</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <!-- Cart layout -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                            <span class="header__cart-notice">3</span>
+                            <!-- no cart: header__cart-list--no-cart -->
+                            <div class="header__cart-list">
+                                <img src="./assets/img/no-cart.png" alt="" class="header__cart-no-cart-img">
+                                <span class="header__cart-list--no-cart-msg">Chưa có sản phẩm</span>
+                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item">
+                                    <li class="header__cart-item">
+                                        <!-- Cart item -->
+                                        <img src="https://bizweb.dktcdn.net/100/502/883/products/220309063447-ipad-air-select-wif-498a2e36-4015-4cf2-bf71-2865cc4635c4.png?v=1700213083473" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">iPad Air 5 64GB 5G - Chính hãng VN</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">16.890.000₫</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-decription">
+                                                    Phân loại: Tím
+                                                </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <!-- Cart item -->
+                                        <img src="https://bizweb.dktcdn.net/100/502/883/products/220309063447-ipad-air-select-wif-498a2e36-4015-4cf2-bf71-2865cc4635c4.png?v=1700213083473" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">iPad Air 5 64GB 5G - Chính hãng VN</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">16.890.000₫</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-decription">
+                                                    Phân loại: Tím
+                                                </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <!-- Cart item -->
+                                        <img src="https://bizweb.dktcdn.net/100/502/883/products/220309063447-ipad-air-select-wif-498a2e36-4015-4cf2-bf71-2865cc4635c4.png?v=1700213083473" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">iPad Air 5 64GB 5G - Chính hãng VN</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">16.890.000₫</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-decription">
+                                                    Phân loại: Tím
+                                                </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="#" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="nav__menu">
+                <ul class="nav__menu-list">
+                    <li class="nav__menu-item nav__menu-item--active">
+                        <a href="index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav__menu-item">
+                        <a href="contact.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav__menu-item has-menu nav__menu-item--active">
+                        <a href="#" class="nav__menu-item--link">Sản phẩm
+                            <i class="nav__menu-item-icon fa-solid fa-chevron-down"></i>
+                        <div class="multi-level">
+                            <ul class="multi-level-list">
+                                <li class="multi-level-item">
+                                    <a href="" class="multi-level-name">iPhone</a>
+                                    <ul class="list">
+                                        <a href="">
+                                            <li class="item">iPhone 15 Series</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">iPhone 14 Series</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">iPhone 13</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">iPhone 12</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">iPhone 11</li>
+                                        </a>
+                                    </ul>
+                                </li>
+                                <li class="multi-level-item">
+                                    <a href="" class="multi-level-name">iPad</a>
+                                    <ul class="list">
+                                        <a href="">
+                                            <li class="item">iPad Pro</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">iPad Air</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">iPad Gen 10</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">iPad Gen 9</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">iPad mini</li>
+                                        </a>
+                                    </ul>
+                                </li>
+                                <li class="multi-level-item">
+                                    <a href="" class="multi-level-name">Watch</a>
+                                    <ul class="list">
+                                        <a href="">
+                                            <li class="item">Apple Watch Ultra</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">Apple Watch S7</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">Apple Watch S8</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">Apple Watch S9</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">Apple Watch S10</li>
+                                        </a>
+                                    </ul>
+                                </li>
+                                <li class="multi-level-item">
+                                    <a href="" class="multi-level-name">Mac</a>
+                                    <ul class="list">
+                                        <a href="">
+                                            <li class="item">MacBook</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">Mac Studio</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">iMac</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">Mac mini</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">Apple TV</li>
+                                        </a>
+                                    </ul>
+                                </li>
+                                <li class="multi-level-item">
+                                    <a href="" class="multi-level-name">AirPods</a>
+                                </li>
+                                <li class="multi-level-item">
+                                    <a href="" class="multi-level-name">Âm thanh</a>
+                                    <ul class="list">
+                                        <a href="">
+                                            <li class="item">Loa</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">Tai nghe </li>
+                                        </a>
+                                    </ul>
+                                </li>
+                                <li class="multi-level-item">
+                                    <a href="" class="multi-level-name">Phụ kiện</a>
+                                    <ul class="list">
+                                        <a href="">
+                                            <li class="item">Phụ kiện Apple</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">Cốc - Cáp</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">Sạc dự phòng</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">Bao da - Ốp lưng</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">Dán cường lực</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">Phụ kiện MacBook</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">Bàn phím - Chuột</li>
+                                        </a>
+                                        <a href="">
+                                            <li class="item">Balo - Túi chống shock</li>
+                                        </a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__menu-item">
+                        <a href="news.html">Tin tức</a>
+                    </li>
+                    <li class="nav__menu-item">
+                        <a href="introduce.html">Liên hệ</a>
+                    </li>
+                </ul>   
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="navigation__content">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="index.html">
+                            <span>Trang chủ</span>
+                        </a>
+                        &nbsp; 
+                        <i class="navigation__icon fa-solid fa-angle-right"></i>
+                    </li>
+                    <li class="navigation__item">
+                        <span class="text">Sản phẩm</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="block_background">
+                <div class="row">
+                    <div class="col_1">
+                        <h1 class="title__product">iPad Air 5 64GB 5G - Chính hãng VN</h1>
+                    </div>
+                    <div class="col_2">
+                        <div class="img-block">
+                            <div class="products__image">
+                                <img src="https://bizweb.dktcdn.net/100/502/883/products/220309063531-ipad-air-select-wif-11a03701-6610-4da0-9a7b-4cdb1ba14f16.png?v=1700213083473" alt="" class="img">
+                                <div class="prosucts__tag">
+                                    <span>
+                                        <img src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/title_image_1_tag.png?1706695416433" alt="" class="tag-img">
+                                        Mới
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="products__img-slider">
+                                <img src="//bizweb.dktcdn.net/thumb/medium/100/502/883/products/220309063531-ipad-air-select-wif-11a03701-6610-4da0-9a7b-4cdb1ba14f16.png?v=1700213083473" alt="">
+                                <img src="//bizweb.dktcdn.net/thumb/medium/100/502/883/products/220309063447-ipad-air-select-wif-498a2e36-4015-4cf2-bf71-2865cc4635c4.png?v=1700213083473" alt="">
+                                <img src="//bizweb.dktcdn.net/thumb/medium/100/502/883/products/220309063614-ipad-air-select-wif-272fbe81-1bff-4515-88da-a4c5e37082c2.png?v=1700213083473" alt="">
+                                <img src="//bizweb.dktcdn.net/thumb/medium/100/502/883/products/220309063455-ipad-air-select-wif-233bbaac-9944-45e9-8da7-68d7bb808fc6.png?v=1700212965350" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col_3">
+                        <div class="products__details">
+                            <div class="products__inventory">
+                                <div class="inventory__list row">
+                                    <div class="col__items">
+                                        <span class="title__brand">Loại:</span>
+                                        <span class="name__brand">iPad</span>
+                                    </div>
+                                    <div class="col__items">
+                                        <span class="title__brand">Thương hiệu:</span>
+                                        <span class="name__brand">Apple</span>
+                                    </div>
+                                    <div class="col__items">
+                                        <span class="title__brand">Tình trạng:</span>
+                                        <span class="name__brand">Còn hàng</span>
+                                    </div>
+                                    <div class="col__items">
+                                        <span class="title__brand">Mã sản phẩm:</span>
+                                        <span class="name__brand">Đang cập nhật</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__inline">
+                                <div class="price__box">
+                                    <span class="title__price">Giá bán:</span>
+                                    <span class="new__price">21.790.000₫</span>
+                                    <span class="old__price">24.990.000₫</span>
+                                </div>
+                                <div class="form__products">
+                                    <div class="version__products">
+                                        <div class="row">
+                                            <div class="version__col">
+                                                <a href="" class="version__link version__link--active">
+                                                    <span class="version__name">256GB Wifi + 5G</span>
+                                                    <span class="version__price">17.890.000₫</span>
+                                                </a>
+                                            </div>
+                                            <div class="version__col">
+                                                <a href="" class="version__link">
+                                                    <span class="version__name">256GB Wifi</span>
+                                                    <span class="version__price">21.790.000₫</span>
+                                                </a>
+                                            </div>
+                                            <div class="version__col">
+                                                <a href="" class="version__link">
+                                                    <span class="version__name">64GB Wifi + 5G</span>
+                                                    <span class="version__price">16.890.000₫</span>
+                                                </a>
+                                            </div>
+                                            <div class="version__col">
+                                                <a href="" class="version__link">
+                                                    <span class="version__name">64GB Wifi</span>
+                                                    <span class="version__price">13.390.000₫</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="select__products">
+                                        <div class="select__color">
+                                            <div class="header__select">Màu sắc:
+                                                <span class="item__select">Tím</span>
+                                            </div>
+                                            <div class="nav__select row">
+                                                <div class="element__color ">
+                                                    <img src="//bizweb.dktcdn.net/thumb/small/100/502/883/products/220309063447-ipad-air-select-wif-498a2e36-4015-4cf2-bf71-2865cc4635c4-e583d274-1bd9-4ee7-b302-0e918b3278e2-434f1bcc-4dea-4c28-8698-e60ed84eaa8d.png?v=1700213041993" alt="">
+                                                    <span>Tím</span>
+                                                </div>
+                                                <div class="element__color">
+                                                    <img src="//bizweb.dktcdn.net/thumb/small/100/502/883/products/220309063614-ipad-air-select-wif-272fbe81-1bff-4515-88da-a4c5e37082c2-7eb0de6d-2d6b-46fc-94af-1c9e0d652cf7-725ea764-f2fe-4723-9b50-80d663d471d0.png?v=1700213041993" alt="">
+                                                    <span>Trắng</span>
+                                                </div>
+                                                <div class="element__color element__color--active">
+                                                    <img src="//bizweb.dktcdn.net/thumb/small/100/502/883/products/220309063531-ipad-air-select-wif-11a03701-6610-4da0-9a7b-4cdb1ba14f16-f3901a1f-f6a0-4b8b-aa05-414f806c0ac4-15c8db2a-e5fd-4aec-811c-fe7445e2829f.png?v=1700213041993" alt="">
+                                                    <span>Xanh</span>
+                                                </div>
+                                                <div class="element__color">
+                                                    <img src="//bizweb.dktcdn.net/thumb/small/100/502/883/products/220309063455-ipad-air-select-wif-233bbaac-9944-45e9-8da7-68d7bb808fc6-0646d668-a5f7-42e5-b918-98ef41dc6b5a-adef42c1-f956-4497-846c-2d72c24ccf23.png?v=1700213041993" alt="">
+                                                    <span>Hồng</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="payment__products">
+                                        <div class="payment">
+                                            <span class="payment__title">Số lượng:</span>
+                                            <div class="input__payment">
+                                                <button class="button__payment" onclick="var result = document.getElementById('qtym'); var qtypro = result.value; if( !isNaN(qtypro) && qtypro > 1 ) result.value--; return false;" type="button">								
+                                                    <i class="fa-solid fa-minus"></i>
+                                                </button>
+                                                <input type="text" id="qtym" name="quantity" value="1" maxlength="3" class="input" 
+                                                onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;" onchange="if(this.value == 0)this.value=1;">
+                                                <button class="button__payment" onclick="var result = document.getElementById('qtym'); var qtypro = result.value; if( !isNaN( qtypro )) result.value++;return false;" type="button">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="add__cart">
+                                        <button class="add__cart-button">
+                                            <span class="text_1">THÊM VÀO GIỎ</span>
+                                            <span class="text_2">Giao hàng tận nơi miễn phí</span>
+                                        </button>
+                                    </div>
+                                    <div class="grounp__button">
+                                        <a href="" class="btn__buy">MUA NGAY</a>
+                                        <div class="contact__phone">
+                                            <span class="hotline">
+                                                Liên hệ 0392405260
+                                            </span>
+                                            <span class="title">Để được tư vẫn và hỗ trợ ngay!!!</span>
+                                        </div>
+                                    </div>
+                                    <div class="promotion">
+                                        <h3 class="title__promotion">
+                                            <i class="fa-solid fa-gift"></i>
+                                            Ưu đãi khi mua hàng
+                                        </h3>
+                                        <div class="content__promotion">
+                                            <div class="rte">
+                                                <p>✔️ Hỗ trợ trả góp 0% chỉ cần CCCD gắn chip hoặc 0% qua thẻ tín dụng</p>
+                                                <p>✔️ Nhập mã&nbsp;
+                                                    <strong>ZALOPAYMT&nbsp;</strong>giảm ngay 1% tối đa
+                                                    <strong>&nbsp;200.000đ&nbsp;</strong>khi thanh toán qua Zalo Pay
+                                                </p>
+                                                <p>✔️ Giảm 50% tối đa&nbsp;
+                                                    <strong>100.000đ</strong>&nbsp;cho thành viên mới của Kredivo
+                                                </p>
+                                                <p>✔️&nbsp;Giảm 5% tối đa
+                                                    <strong>&nbsp;200.000đ</strong>, áp dụng kỳ hạn 6/12 tháng khi thanh toán qua Kredivo
+                                                </p>
+                                                <p>✔️ Giảm 50% tối đa&nbsp;
+                                                    <strong>100.000đ,&nbsp;</strong>áp dụng cho đơn hàng từ
+                                                    <strong>&nbsp;200.000đ&nbsp;</strong>cho người dùng&nbsp;mới của Home Pay Later
+                                                </p>
+                                                <p>✔️ Giảm 5% tối đa&nbsp;
+                                                    <strong>200.000đ&nbsp;</strong>cho đơn từ&nbsp;
+                                                    <strong>200.000đ</strong>&nbsp;khi thanh toán qua Home PayLater
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col__4">
+                        <div class="row">
+                            <div class="col">
+                                <div class="promotion">
+                                    <h3 class="title__promotion">
+                                        <i class="fa-regular fa-newspaper"></i>
+                                        Cam kết bán hàng
+                                    </h3>
+                                    <div class="content__promotion">
+                                        <ul>
+                                            <li>
+                                                <img width="20" height="20" src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/camket_1.png?1706695416433" alt="Hàng chính hãng. Nguồn gốc rõ ràng">
+                                                Hàng chính hãng. Nguồn gốc rõ ràng
+                                            </li>
+                                            <li>
+                                                <img width="20" height="20" src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/camket_2.png?1706695416433" alt="Tặng máy nếu phát hiện máy sửa chữa">
+                                                Tặng máy nếu phát hiện máy sửa chữa
+                                            </li>
+                                            <li>
+                                                <img width="20" height="20" src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/camket_3.png?1706695416433" alt="Giao hàng ngay (nội thành TPHCM)">
+                                                Giao hàng ngay (nội thành TPHCM)
+                                            </li>
+                                            <li>
+                                                <img width="20" height="20" src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/camket_4.png?1706695416433" alt="Dùng thử 7 ngày miễn phí">
+                                                Dùng thử 7 ngày miễn phí
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="promotion">
+                                    <h3 class="title__promotion">
+                                        <i class="fa-solid fa-bolt-lightning"></i>
+                                        Danh sách khuyến mãi
+                                    </h3>
+                                    <div class="content__promotion">
+                                        <ul>
+                                            <li>
+                                                <img width="20" height="20" src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/km_product1.png?1706695416433" alt="Áp dụng Phiếu quà tặng/ Mã giảm giá theo sản phẩm.">Áp dụng Phiếu quà tặng/ Mã giảm giá theo sản phẩm.
+                                            </li>
+                                            <li>
+                                                <img width="20" height="20" src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/km_product2.png?1706695416433" alt="Giảm giá 10% khi mua từ 5 sản phẩm trở lên.">Giảm giá 10% khi mua từ 5 sản phẩm trở lên.
+                                            </li>
+                                            <li>
+                                                <img width="20" height="20" src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/km_product3.png?1706695416433" alt="Tặng 100.000₫ mua hàng tại website thành viên Dola Phone, áp dụng khi mua Online tại Hồ Chí Minh và 1 số khu vực khác.">Tặng 100.000₫ mua hàng tại website thành viên Dola Phone, áp dụng khi mua Online tại Hồ Chí Minh và 1 số khu vực khác.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mid_products">
+                <div class="container">
+                    <div class="row">
+                        <div class="col__describe">
+                            <div class="block_background">
+                                <div class="products__describe">
+                                    <h3 class="title__describe">Mô tả sản phẩm</h3>
+                                </div>
+                                <div class="content__describe">
+                                    <div class="tetx__describe">
+                                        <p>Là một trong những “siêu phẩm” được săn đón bậc nhất năm vừa rồi của nhà “Táo”, iPad Air 5 đã để lại ấn tượng khi sở hữu hệ thống đổi mới, cải tiến vượt bậc. Cùng Oneway tìm hiểu ngay những chi tiết đáng chú ý của bản nâng cấp này nhé!</p>
+                                        <p>&nbsp;</p>
+                                        <h2><strong>Tinh xảo từ thiết kế độc đáo nhà Apple</strong></h2>
+                                        <p>Điểm ấn tượng đầu tiên mà iPad Air 5 mang lại cho khách hàng chính là ở bảng màu sắc trong các thiết kế vô cùng đa dạng, phù hợp với mọi nhu cầu, sở thích của mỗi người. Không chỉ có những tone màu chủ đạo quen thuộc như xanh dương, xám, hồng, trắng, tím, Air 5 còn bổ sung thêm màu tím cực kì hot trend, hút mắt.&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <p><img alt="Bảng màu thiết kế cực kỳ đa dạng" data-src="/upload_images/images/2022/05/12/ipad-air-5-mtsp-oneway1.png" src="https://onewaymobile.vn/upload_images/images/2022/05/12/ipad-air-5-mtsp-oneway1.png"></p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <p><em>Bảng màu thiết kế cực kỳ đa dạng</em></p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <p>Thiết kế mỏng nhẹ, viền màn hình cong và bo ở bốn góc, tạo cảm giác cầm trên tay rất chắc chắn. Đặc biệt, màn hình cảm ứng đa điểm kết hợp cùng đèn LED giúp quá trình trải nghiệm sử dụng thêm mượt mà, hình ảnh sống động và sắc nét hơn cả.&nbsp;</p>
+                                        <h2><strong>Điểm nổi bật đến từ con chip đình đám Apple M1</strong></h2>
+                                        <p>Siêu phẩm được săn đón hàng đầu, gần như chỉ sau Iphone 13 khi sở hữu con chip hiện đại bậc nhất nhà Apple - M1. Điểm nổi bật nhất của con chip mang lại chính là hiệu suất đỉnh cao và khả năng xử lý các thao tác nhanh chóng. Bạn có thể tự tin sử dụng song hành nhiều tab cùng lúc trên thiết bị, đồng thời cân được cả những tựa game được coi là “nặng đô” nhất hiện nay. Có thể nói, iPad Air 5 gần như đáp ứng được tất cả các nhu cầu nhanh chóng không thua kém gì một chiếc máy tính PC.&nbsp;</p>
+                                        <p><img alt="Con chip đình đám M1 cân mọi thao tác" data-src="/upload_images/images/2022/05/12/ipad-air-5-mtsp-oneway-1.png" src="https://onewaymobile.vn/upload_images/images/2022/05/12/ipad-air-5-mtsp-oneway-1.png"></p>
+                                        <p><em>Con chip đình đám M1 cân mọi thao tác</em></p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <h2><strong>Đột phá từ tính năng khiến bạn không thể bỏ lỡ</strong></h2>
+                                        <p>Với khả năng lưu trữ gấp đôi so với dòng iPad Air 4, iPad Air 5 sở hữu dung lượng khủng với RAM 8GB, hứa hẹn là một người bạn đắc lực để bạn có thể lưu trữ nhiều nhất những khoảnh khắc bằng hình ảnh hoặc nhiều ứng dụng, thông tin cần thiết</p>
+                                        <p><img alt="Dung lượng gấp đôi phiên bản tiền nhiệm" data-src="/upload_images/images/2022/05/12/ipad-air-5-mtsp-oneway-4.png" src="https://onewaymobile.vn/upload_images/images/2022/05/12/ipad-air-5-mtsp-oneway-4.png"></p>
+                                        <p><em>Dung lượng gấp đôi phiên bản tiền nhiệm</em></p>
+                                        <p>Không chỉ thế, iPad Air 5 có thể đáp ứng được mọi nhu cầu về camera, hình ảnh của khách hàng. Điều này thể hiện rõ nhất ở camera chính 12MP của thiết bị, cùng tính năng Smart HDR quen thuộc sẽ giúp hỗ trợ cho ra những bức ảnh sống động, tươi tắn và sắc nét nhất.&nbsp;</p>
+                                        <p><img alt="Camera sắc nét sống động" data-src="/upload_images/images/2022/05/12/ipad-air-5-mtsp-oneway-2.png" src="https://onewaymobile.vn/upload_images/images/2022/05/12/ipad-air-5-mtsp-oneway-2.png"></p>
+                                        <p><em>Camera sắc nét sống động</em></p>
+                                        <p>Đồng thời, sản phẩm còn sở hữu viên pin tích hợp lithium-polymer có thể sạc lại 28.6 W/ giờ. Thời lượng pin cũng cực kỳ ấn tượng, lên đến 10 giờ lướt web hoặc xem video, hứa hẹn mang đến trải nghiệm trọn vẹn trong suốt ngày dài cho khách hàng.</p>
+                                        <p><img alt="Viên pin dung lượng cao, khả năng sạc nhanh ấn tượng" data-src="/upload_images/images/2022/05/12/ipad-air-5-mtsp-oneway-3.png" src="https://onewaymobile.vn/upload_images/images/2022/05/12/ipad-air-5-mtsp-oneway-3.png"></p>
+                                        <p><em>Viên pin dung lượng cao, khả năng sạc nhanh ấn tượng</em></p>
+                                        <p>&nbsp;</p>
+                                        <p>Một vài tính năng đặc biệt khác cũng cực kỳ nổi bật ở thiết bị này phải kể đến như: Kết nối Apple Pencil 2, Kết nối bàn phím rời, Micro kép, Mở khóa bằng vân tay, Nam châm và sạc cho Apple Pencil,...</p>
+                                        <p>---</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col__technique">
+                            <div class="row">
+                                <div class="col__products">
+                                    <div class="block_background">
+                                        <div class="products__describe">
+                                            <h3 class="title__describe">
+                                                <i class="fa-solid fa-gear"></i>
+                                                Thông số kỹ thuật
+                                            </h3>
+                                        </div>
+                                        <div class="content__describe">
+                                            <div class="tetx__describe">
+                                                <table border="0" cellpadding="5px" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="40%">RAM</td>
+                                                            <td>8GB</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="40%">Màn hình rộng</td>
+                                                            <td>10.9"</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="40%">Tần số quét</td>
+                                                            <td>60Hz</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="40%">Độ phân giải</td>
+                                                            <td>1640 x 2360 Pixels</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="40%">Hệ điều hành</td>
+                                                            <td>iPadOS 15</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="40%">Chip xử lý</td>
+                                                            <td>Apple M1 8 nhân</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="40%">Bộ nhớ trong</td>
+                                                            <td>64GB</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="40%">Độ phân giải camera sau</td>
+                                                            <td>12 MP</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="40%">Độ phân giải camera trước</td>
+                                                            <td>12 MP</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="40%">Mạng di động</td>
+                                                            <td>Không có</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="40%">Sim</td>
+                                                            <td>Không có</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="40%">Thực hiện cuộc gọi</td>
+                                                            <td>FaceTime</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="40%">Dung lượng pin</td>
+                                                            <td>28.6 Wh (~ 7587 mAh)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="40%">Loại pin</td>
+                                                            <td>Li-Po</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="40%">Tình trạng</td>
+                                                            <td>Hàng mới</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="40%">Nguồn gốc</td>
+                                                            <td>Chính ngạch</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col__products">
+                                    <div class="block_background">
+                                        <div class="products__describe">
+                                            <h3 class="title__describe">
+                                                <i class="fa-solid fa-star"></i>
+                                                Có thể bạn thích
+                                            </h3>
+                                        </div>
+                                        
+                                        <div class="product-outstanding__row">
+                                            <div class="like__products">
+                                                    <div class="gird__column-2-5--container">
+                                                        <div class="product-content-item">
+                                                            <a href="" class="product-content-item__link">
+                                                                <img src="//bizweb.dktcdn.net/thumb/large/100/502/883/products/230913033227-iphone-15-pink-1-e946aba7-7c98-4d68-9405-66868d14acc4-6844ee0e-e88d-40fd-bce7-c57f26f49a77.png?v=1700194183203" alt="" class="product-content-item__img">
+                                                            </a>
+                                                            <div class="product-content-item__cart">
+                                                                <button class="product-content-item__cart-btn">
+                                                                    <i class="product-content-item__cart-link fa-solid fa-basket-shopping"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-content-item__info">
+                                                            <a href="" class="product-content-item__name">
+                                                                <h5>
+                                                                    iPhone 15 512GB - Chính hãng VN/A
+                                                                </h5>
+                                                            </a>
+                                                            <div class="product-content-item__price">
+                                                                <span class="product-content-item__price-new">29.990.000₫</span>
+                                                                <span class="product-content-item__price-old">33.990.000₫</span>
+                                                            </div>
+                                                            <div class="product-content-item__policy">
+                                                                <p>Được hỗ trợ 1 đổi 1 trong 30 ngày nếu có lỗi từ nhà sản xuất</p>
+                                                            </div>
+                                                            <div class="product-content-item__action">
+                                                                <span class="product-content-item__like product-content-item__like--liked">
+                                                                    <i class="product-content-item__like-icon--no fa-regular fa-heart"></i>
+                                                                    <i class="product-content-item__like-icon--yes fa-solid fa-heart"></i>
+                                                                </span>
+                                                                <div class="product-content-item__rating">
+                                                                    <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                    <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                    <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                    <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                    <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-content-item__sale-off">
+                                                                <span class="product-content-item__sale-off-percen">Giảm 12%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="like__products">
+                                                    <div class="gird__column-2-5--container">
+                                                        <div class="product-content-item">
+                                                            <a href="" class="product-content-item__link">
+                                                                <img src="//bizweb.dktcdn.net/thumb/large/100/502/883/products/230628111910-iphone-14-pro-128gb-4ac4effe-2807-4dff-b75e-144f7f5f9d82-cfad8ff4-5695-4438-b616-f5002d5f9af9-8484545e-c38b-4a44-b4fb-756214830766.png?v=1700193801040" alt="" class="product-content-item__img">
+                                                            </a>
+                                                            <div class="product-content-item__cart">
+                                                                <button class="product-content-item__cart-btn">
+                                                                    <i class="product-content-item__cart-link fa-solid fa-basket-shopping"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-content-item__info">
+                                                            <a href="" class="product-content-item__name">
+                                                                <h5>
+                                                                    iPhone 14 Pro 1TB - Chính hãng VN/A
+                                                                </h5>
+                                                            </a>
+                                                            <div class="product-content-item__price">
+                                                                <span class="product-content-item__price-new">30.990.000₫</span>
+                                                                <span class="product-content-item__price-old">46.990.000₫</span>
+                                                            </div>
+                                                            <div class="product-content-item__policy">
+                                                                <p>Bảo hành chính hãng Apple 12 tháng</p>
+                                                            </div>
+                                                            <div class="product-content-item__action">
+                                                                <span class="product-content-item__like product-content-item__like--liked">
+                                                                    <i class="product-content-item__like-icon--no fa-regular fa-heart"></i>
+                                                                    <i class="product-content-item__like-icon--yes fa-solid fa-heart"></i>
+                                                                </span>
+                                                                <div class="product-content-item__rating">
+                                                                    <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                    <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                    <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                    <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                    <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-content-item__sale-off">
+                                                                <span class="product-content-item__sale-off-percen">Giảm 34%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="like__products">
+                                                <div class="gird__column-2-5--container">
+                                                    <div class="product-content-item">
+                                                        <a href="" class="product-content-item__link">
+                                                            <img src="//bizweb.dktcdn.net/thumb/large/100/502/883/products/230628111910-iphone-14-pro-128gb-4ac4effe-2807-4dff-b75e-144f7f5f9d82-cfad8ff4-5695-4438-b616-f5002d5f9af9-8484545e-c38b-4a44-b4fb-756214830766.png?v=1700193801040" alt="" class="product-content-item__img">
+                                                        </a>
+                                                        <div class="product-content-item__cart">
+                                                            <button class="product-content-item__cart-btn">
+                                                                <i class="product-content-item__cart-link fa-solid fa-basket-shopping"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-content-item__info">
+                                                        <a href="" class="product-content-item__name">
+                                                            <h5>
+                                                                iPhone 14 Pro 1TB - Chính hãng VN/A
+                                                            </h5>
+                                                        </a>
+                                                        <div class="product-content-item__price">
+                                                            <span class="product-content-item__price-new">30.990.000₫</span>
+                                                            <span class="product-content-item__price-old">46.990.000₫</span>
+                                                        </div>
+                                                        <div class="product-content-item__policy">
+                                                            <p>Bảo hành chính hãng Apple 12 tháng</p>
+                                                        </div>
+                                                        <div class="product-content-item__action">
+                                                            <span class="product-content-item__like product-content-item__like--liked">
+                                                                <i class="product-content-item__like-icon--no fa-regular fa-heart"></i>
+                                                                <i class="product-content-item__like-icon--yes fa-solid fa-heart"></i>
+                                                            </span>
+                                                            <div class="product-content-item__rating">
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-content-item__sale-off">
+                                                            <span class="product-content-item__sale-off-percen">Giảm 34%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="like__products">
+                                                <div class="gird__column-2-5--container">
+                                                    <div class="product-content-item">
+                                                        <a href="" class="product-content-item__link">
+                                                            <img src="//bizweb.dktcdn.net/thumb/large/100/502/883/products/230628111910-iphone-14-pro-128gb-4ac4effe-2807-4dff-b75e-144f7f5f9d82-cfad8ff4-5695-4438-b616-f5002d5f9af9-8484545e-c38b-4a44-b4fb-756214830766.png?v=1700193801040" alt="" class="product-content-item__img">
+                                                        </a>
+                                                        <div class="product-content-item__cart">
+                                                            <button class="product-content-item__cart-btn">
+                                                                <i class="product-content-item__cart-link fa-solid fa-basket-shopping"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-content-item__info">
+                                                        <a href="" class="product-content-item__name">
+                                                            <h5>
+                                                                iPhone 14 Pro 1TB - Chính hãng VN/A
+                                                            </h5>
+                                                        </a>
+                                                        <div class="product-content-item__price">
+                                                            <span class="product-content-item__price-new">30.990.000₫</span>
+                                                            <span class="product-content-item__price-old">46.990.000₫</span>
+                                                        </div>
+                                                        <div class="product-content-item__policy">
+                                                            <p>Bảo hành chính hãng Apple 12 tháng</p>
+                                                        </div>
+                                                        <div class="product-content-item__action">
+                                                            <span class="product-content-item__like product-content-item__like--liked">
+                                                                <i class="product-content-item__like-icon--no fa-regular fa-heart"></i>
+                                                                <i class="product-content-item__like-icon--yes fa-solid fa-heart"></i>
+                                                            </span>
+                                                            <div class="product-content-item__rating">
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-content-item__sale-off">
+                                                            <span class="product-content-item__sale-off-percen">Giảm 34%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="like__products">
+                                                <div class="gird__column-2-5--container">
+                                                    <div class="product-content-item">
+                                                        <a href="" class="product-content-item__link">
+                                                            <img src="//bizweb.dktcdn.net/thumb/large/100/502/883/products/230628111910-iphone-14-pro-128gb-4ac4effe-2807-4dff-b75e-144f7f5f9d82-cfad8ff4-5695-4438-b616-f5002d5f9af9-8484545e-c38b-4a44-b4fb-756214830766.png?v=1700193801040" alt="" class="product-content-item__img">
+                                                        </a>
+                                                        <div class="product-content-item__cart">
+                                                            <button class="product-content-item__cart-btn">
+                                                                <i class="product-content-item__cart-link fa-solid fa-basket-shopping"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-content-item__info">
+                                                        <a href="" class="product-content-item__name">
+                                                            <h5>
+                                                                iPhone 14 Pro 1TB - Chính hãng VN/A
+                                                            </h5>
+                                                        </a>
+                                                        <div class="product-content-item__price">
+                                                            <span class="product-content-item__price-new">30.990.000₫</span>
+                                                            <span class="product-content-item__price-old">46.990.000₫</span>
+                                                        </div>
+                                                        <div class="product-content-item__policy">
+                                                            <p>Bảo hành chính hãng Apple 12 tháng</p>
+                                                        </div>
+                                                        <div class="product-content-item__action">
+                                                            <span class="product-content-item__like product-content-item__like--liked">
+                                                                <i class="product-content-item__like-icon--no fa-regular fa-heart"></i>
+                                                                <i class="product-content-item__like-icon--yes fa-solid fa-heart"></i>
+                                                            </span>
+                                                            <div class="product-content-item__rating">
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-content-item__sale-off">
+                                                            <span class="product-content-item__sale-off-percen">Giảm 34%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="like__products">
+                                                <div class="gird__column-2-5--container">
+                                                    <div class="product-content-item">
+                                                        <a href="" class="product-content-item__link">
+                                                            <img src="//bizweb.dktcdn.net/thumb/large/100/502/883/products/230628111910-iphone-14-pro-128gb-4ac4effe-2807-4dff-b75e-144f7f5f9d82-cfad8ff4-5695-4438-b616-f5002d5f9af9-8484545e-c38b-4a44-b4fb-756214830766.png?v=1700193801040" alt="" class="product-content-item__img">
+                                                        </a>
+                                                        <div class="product-content-item__cart">
+                                                            <button class="product-content-item__cart-btn">
+                                                                <i class="product-content-item__cart-link fa-solid fa-basket-shopping"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-content-item__info">
+                                                        <a href="" class="product-content-item__name">
+                                                            <h5>
+                                                                iPhone 14 Pro 1TB - Chính hãng VN/A
+                                                            </h5>
+                                                        </a>
+                                                        <div class="product-content-item__price">
+                                                            <span class="product-content-item__price-new">30.990.000₫</span>
+                                                            <span class="product-content-item__price-old">46.990.000₫</span>
+                                                        </div>
+                                                        <div class="product-content-item__policy">
+                                                            <p>Bảo hành chính hãng Apple 12 tháng</p>
+                                                        </div>
+                                                        <div class="product-content-item__action">
+                                                            <span class="product-content-item__like product-content-item__like--liked">
+                                                                <i class="product-content-item__like-icon--no fa-regular fa-heart"></i>
+                                                                <i class="product-content-item__like-icon--yes fa-solid fa-heart"></i>
+                                                            </span>
+                                                            <div class="product-content-item__rating">
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-content-item__sale-off">
+                                                            <span class="product-content-item__sale-off-percen">Giảm 34%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="like__products">
+                                                <div class="gird__column-2-5--container">
+                                                    <div class="product-content-item">
+                                                        <a href="" class="product-content-item__link">
+                                                            <img src="//bizweb.dktcdn.net/thumb/large/100/502/883/products/230628111910-iphone-14-pro-128gb-4ac4effe-2807-4dff-b75e-144f7f5f9d82-cfad8ff4-5695-4438-b616-f5002d5f9af9-8484545e-c38b-4a44-b4fb-756214830766.png?v=1700193801040" alt="" class="product-content-item__img">
+                                                        </a>
+                                                        <div class="product-content-item__cart">
+                                                            <button class="product-content-item__cart-btn">
+                                                                <i class="product-content-item__cart-link fa-solid fa-basket-shopping"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-content-item__info">
+                                                        <a href="" class="product-content-item__name">
+                                                            <h5>
+                                                                iPhone 14 Pro 1TB - Chính hãng VN/A
+                                                            </h5>
+                                                        </a>
+                                                        <div class="product-content-item__price">
+                                                            <span class="product-content-item__price-new">30.990.000₫</span>
+                                                            <span class="product-content-item__price-old">46.990.000₫</span>
+                                                        </div>
+                                                        <div class="product-content-item__policy">
+                                                            <p>Bảo hành chính hãng Apple 12 tháng</p>
+                                                        </div>
+                                                        <div class="product-content-item__action">
+                                                            <span class="product-content-item__like product-content-item__like--liked">
+                                                                <i class="product-content-item__like-icon--no fa-regular fa-heart"></i>
+                                                                <i class="product-content-item__like-icon--yes fa-solid fa-heart"></i>
+                                                            </span>
+                                                            <div class="product-content-item__rating">
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-content-item__sale-off">
+                                                            <span class="product-content-item__sale-off-percen">Giảm 34%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="like__products">
+                                                <div class="gird__column-2-5--container">
+                                                    <div class="product-content-item">
+                                                        <a href="" class="product-content-item__link">
+                                                            <img src="//bizweb.dktcdn.net/thumb/large/100/502/883/products/230628111910-iphone-14-pro-128gb-4ac4effe-2807-4dff-b75e-144f7f5f9d82-cfad8ff4-5695-4438-b616-f5002d5f9af9-8484545e-c38b-4a44-b4fb-756214830766.png?v=1700193801040" alt="" class="product-content-item__img">
+                                                        </a>
+                                                        <div class="product-content-item__cart">
+                                                            <button class="product-content-item__cart-btn">
+                                                                <i class="product-content-item__cart-link fa-solid fa-basket-shopping"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-content-item__info">
+                                                        <a href="" class="product-content-item__name">
+                                                            <h5>
+                                                                iPhone 14 Pro 1TB - Chính hãng VN/A
+                                                            </h5>
+                                                        </a>
+                                                        <div class="product-content-item__price">
+                                                            <span class="product-content-item__price-new">30.990.000₫</span>
+                                                            <span class="product-content-item__price-old">46.990.000₫</span>
+                                                        </div>
+                                                        <div class="product-content-item__policy">
+                                                            <p>Bảo hành chính hãng Apple 12 tháng</p>
+                                                        </div>
+                                                        <div class="product-content-item__action">
+                                                            <span class="product-content-item__like product-content-item__like--liked">
+                                                                <i class="product-content-item__like-icon--no fa-regular fa-heart"></i>
+                                                                <i class="product-content-item__like-icon--yes fa-solid fa-heart"></i>
+                                                            </span>
+                                                            <div class="product-content-item__rating">
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-content-item__sale-off">
+                                                            <span class="product-content-item__sale-off-percen">Giảm 34%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="like__products">
+                                                <div class="gird__column-2-5--container">
+                                                    <div class="product-content-item">
+                                                        <a href="" class="product-content-item__link">
+                                                            <img src="//bizweb.dktcdn.net/thumb/large/100/502/883/products/230628111910-iphone-14-pro-128gb-4ac4effe-2807-4dff-b75e-144f7f5f9d82-cfad8ff4-5695-4438-b616-f5002d5f9af9-8484545e-c38b-4a44-b4fb-756214830766.png?v=1700193801040" alt="" class="product-content-item__img">
+                                                        </a>
+                                                        <div class="product-content-item__cart">
+                                                            <button class="product-content-item__cart-btn">
+                                                                <i class="product-content-item__cart-link fa-solid fa-basket-shopping"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-content-item__info">
+                                                        <a href="" class="product-content-item__name">
+                                                            <h5>
+                                                                iPhone 14 Pro 1TB - Chính hãng VN/A
+                                                            </h5>
+                                                        </a>
+                                                        <div class="product-content-item__price">
+                                                            <span class="product-content-item__price-new">30.990.000₫</span>
+                                                            <span class="product-content-item__price-old">46.990.000₫</span>
+                                                        </div>
+                                                        <div class="product-content-item__policy">
+                                                            <p>Bảo hành chính hãng Apple 12 tháng</p>
+                                                        </div>
+                                                        <div class="product-content-item__action">
+                                                            <span class="product-content-item__like product-content-item__like--liked">
+                                                                <i class="product-content-item__like-icon--no fa-regular fa-heart"></i>
+                                                                <i class="product-content-item__like-icon--yes fa-solid fa-heart"></i>
+                                                            </span>
+                                                            <div class="product-content-item__rating">
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-content-item__sale-off">
+                                                            <span class="product-content-item__sale-off-percen">Giảm 34%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="like__products">
+                                                <div class="gird__column-2-5--container">
+                                                    <div class="product-content-item">
+                                                        <a href="" class="product-content-item__link">
+                                                            <img src="//bizweb.dktcdn.net/thumb/large/100/502/883/products/230628111910-iphone-14-pro-128gb-4ac4effe-2807-4dff-b75e-144f7f5f9d82-cfad8ff4-5695-4438-b616-f5002d5f9af9-8484545e-c38b-4a44-b4fb-756214830766.png?v=1700193801040" alt="" class="product-content-item__img">
+                                                        </a>
+                                                        <div class="product-content-item__cart">
+                                                            <button class="product-content-item__cart-btn">
+                                                                <i class="product-content-item__cart-link fa-solid fa-basket-shopping"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-content-item__info">
+                                                        <a href="" class="product-content-item__name">
+                                                            <h5>
+                                                                iPhone 14 Pro 1TB - Chính hãng VN/A
+                                                            </h5>
+                                                        </a>
+                                                        <div class="product-content-item__price">
+                                                            <span class="product-content-item__price-new">30.990.000₫</span>
+                                                            <span class="product-content-item__price-old">46.990.000₫</span>
+                                                        </div>
+                                                        <div class="product-content-item__policy">
+                                                            <p>Bảo hành chính hãng Apple 12 tháng</p>
+                                                        </div>
+                                                        <div class="product-content-item__action">
+                                                            <span class="product-content-item__like product-content-item__like--liked">
+                                                                <i class="product-content-item__like-icon--no fa-regular fa-heart"></i>
+                                                                <i class="product-content-item__like-icon--yes fa-solid fa-heart"></i>
+                                                            </span>
+                                                            <div class="product-content-item__rating">
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-content-item__sale-off">
+                                                            <span class="product-content-item__sale-off-percen">Giảm 34%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="like__products">
+                                                <div class="gird__column-2-5--container">
+                                                    <div class="product-content-item">
+                                                        <a href="" class="product-content-item__link">
+                                                            <img src="//bizweb.dktcdn.net/thumb/large/100/502/883/products/230628111910-iphone-14-pro-128gb-4ac4effe-2807-4dff-b75e-144f7f5f9d82-cfad8ff4-5695-4438-b616-f5002d5f9af9-8484545e-c38b-4a44-b4fb-756214830766.png?v=1700193801040" alt="" class="product-content-item__img">
+                                                        </a>
+                                                        <div class="product-content-item__cart">
+                                                            <button class="product-content-item__cart-btn">
+                                                                <i class="product-content-item__cart-link fa-solid fa-basket-shopping"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-content-item__info">
+                                                        <a href="" class="product-content-item__name">
+                                                            <h5>
+                                                                iPhone 14 Pro 1TB - Chính hãng VN/A
+                                                            </h5>
+                                                        </a>
+                                                        <div class="product-content-item__price">
+                                                            <span class="product-content-item__price-new">30.990.000₫</span>
+                                                            <span class="product-content-item__price-old">46.990.000₫</span>
+                                                        </div>
+                                                        <div class="product-content-item__policy">
+                                                            <p>Bảo hành chính hãng Apple 12 tháng</p>
+                                                        </div>
+                                                        <div class="product-content-item__action">
+                                                            <span class="product-content-item__like product-content-item__like--liked">
+                                                                <i class="product-content-item__like-icon--no fa-regular fa-heart"></i>
+                                                                <i class="product-content-item__like-icon--yes fa-solid fa-heart"></i>
+                                                            </span>
+                                                            <div class="product-content-item__rating">
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-content-item__sale-off">
+                                                            <span class="product-content-item__sale-off-percen">Giảm 34%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="like__products">
+                                                <div class="gird__column-2-5--container">
+                                                    <div class="product-content-item">
+                                                        <a href="" class="product-content-item__link">
+                                                            <img src="//bizweb.dktcdn.net/thumb/large/100/502/883/products/230628111910-iphone-14-pro-128gb-4ac4effe-2807-4dff-b75e-144f7f5f9d82-cfad8ff4-5695-4438-b616-f5002d5f9af9-8484545e-c38b-4a44-b4fb-756214830766.png?v=1700193801040" alt="" class="product-content-item__img">
+                                                        </a>
+                                                        <div class="product-content-item__cart">
+                                                            <button class="product-content-item__cart-btn">
+                                                                <i class="product-content-item__cart-link fa-solid fa-basket-shopping"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-content-item__info">
+                                                        <a href="" class="product-content-item__name">
+                                                            <h5>
+                                                                iPhone 14 Pro 1TB - Chính hãng VN/A
+                                                            </h5>
+                                                        </a>
+                                                        <div class="product-content-item__price">
+                                                            <span class="product-content-item__price-new">30.990.000₫</span>
+                                                            <span class="product-content-item__price-old">46.990.000₫</span>
+                                                        </div>
+                                                        <div class="product-content-item__policy">
+                                                            <p>Bảo hành chính hãng Apple 12 tháng</p>
+                                                        </div>
+                                                        <div class="product-content-item__action">
+                                                            <span class="product-content-item__like product-content-item__like--liked">
+                                                                <i class="product-content-item__like-icon--no fa-regular fa-heart"></i>
+                                                                <i class="product-content-item__like-icon--yes fa-solid fa-heart"></i>
+                                                            </span>
+                                                            <div class="product-content-item__rating">
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                                <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-content-item__sale-off">
+                                                            <span class="product-content-item__sale-off-percen">Giảm 34%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products">
+                <div class="container">
+                    <div class="section__products">
+                        <h3 class="section__products-title">
+                            SẢN PHẨM LIÊN QUAN
+                        </h3>
+                        <div class="gird__column-12">
+                            <div class="product-outstanding">
+                                <div class="product-outstanding__row">
+                                    <div class="gird__column-2-5">
+                                            <div class="gird__column-2-5--container">
+                                                <div class="product-content-item">
+                                                    <a href="" class="product-content-item__link">
+                                                        <img src="//bizweb.dktcdn.net/thumb/large/100/502/883/products/230913060438-iphone-15-pro-max-b-1-a6e28d40-f9e3-483f-ae8b-39d2fc6ba938.png?v=1700195661260" alt="" class="product-content-item__img">
+                                                    </a>
+                                                    <div class="product-content-item__cart">
+                                                        <button class="product-content-item__cart-btn">
+                                                            <i class="product-content-item__cart-link fa-solid fa-basket-shopping"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content-item__info">
+                                                    <a href="" class="product-content-item__name">
+                                                        <h5>
+                                                            iPhone 15 Pro Max 512GB - Chính hãng VN/A
+                                                        </h5>
+                                                    </a>
+                                                    <div class="product-content-item__price">
+                                                        <span class="product-content-item__price-new">39.390.000₫</span>
+                                                        <span class="product-content-item__price-old">43.990.000₫</span>
+                                                    </div>
+                                                    <div class="product-content-item__policy">
+                                                        <p>Bảo hành chính hãng Apple 12 tháng</p>
+                                                    </div>
+                                                    <div class="product-content-item__action">
+                                                        <span class="product-content-item__like product-content-item__like--liked">
+                                                            <i class="product-content-item__like-icon--no fa-regular fa-heart"></i>
+                                                            <i class="product-content-item__like-icon--yes fa-solid fa-heart"></i>
+                                                        </span>
+                                                        <div class="product-content-item__rating">
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-content-item__sale-off">
+                                                        <span class="product-content-item__sale-off-percen">Giảm 10%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="gird__column-2-5">
+                                            <div class="gird__column-2-5--container">
+                                                <div class="product-content-item">
+                                                    <a href="" class="product-content-item__link">
+                                                        <img src="//bizweb.dktcdn.net/thumb/large/100/502/883/products/230628110910-iphone-14-pro-max-1-1bad29d8-76a1-4f4a-9bc2-93eee6a2d7ea-61e61768-f143-48bd-a884-d552977c5f1c.png?v=1700193758290" alt="" class="product-content-item__img">
+                                                    </a>
+                                                    <div class="product-content-item__cart">
+                                                        <button class="product-content-item__cart-btn">
+                                                            <i class="product-content-item__cart-link fa-solid fa-basket-shopping"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content-item__info">
+                                                    <a href="" class="product-content-item__name">
+                                                        <h5>
+                                                            iPhone 14 Pro Max 1TB - Chính hãng VN/A
+                                                        </h5>
+                                                    </a>
+                                                    <div class="product-content-item__price">
+                                                        <span class="product-content-item__price-new">37.490.000₫</span>
+                                                        <span class="product-content-item__price-old">49.990.000₫</span>
+                                                    </div>
+                                                    <div class="product-content-item__policy">
+                                                        <p>Bảo hành chính hãng Apple 12 tháng</p>
+                                                    </div>
+                                                    <div class="product-content-item__action">
+                                                        <span class="product-content-item__like product-content-item__like--liked">
+                                                            <i class="product-content-item__like-icon--no fa-regular fa-heart"></i>
+                                                            <i class="product-content-item__like-icon--yes fa-solid fa-heart"></i>
+                                                        </span>
+                                                        <div class="product-content-item__rating">
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-content-item__sale-off">
+                                                        <span class="product-content-item__sale-off-percen">Giảm 25%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="gird__column-2-5">
+                                            <div class="gird__column-2-5--container">
+                                                <div class="product-content-item">
+                                                    <a href="" class="product-content-item__link">
+                                                        <img src="//bizweb.dktcdn.net/thumb/large/100/502/883/products/230913033227-iphone-15-pink-1-e946aba7-7c98-4d68-9405-66868d14acc4-6844ee0e-e88d-40fd-bce7-c57f26f49a77.png?v=1700194183203" alt="" class="product-content-item__img">
+                                                    </a>
+                                                    <div class="product-content-item__cart">
+                                                        <button class="product-content-item__cart-btn">
+                                                            <i class="product-content-item__cart-link fa-solid fa-basket-shopping"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content-item__info">
+                                                    <a href="" class="product-content-item__name">
+                                                        <h5>
+                                                            iPhone 15 512GB - Chính hãng VN/A
+                                                        </h5>
+                                                    </a>
+                                                    <div class="product-content-item__price">
+                                                        <span class="product-content-item__price-new">29.990.000₫</span>
+                                                        <span class="product-content-item__price-old">33.990.000₫</span>
+                                                    </div>
+                                                    <div class="product-content-item__policy">
+                                                        <p>Được hỗ trợ 1 đổi 1 trong 30 ngày nếu có lỗi từ nhà sản xuất</p>
+                                                    </div>
+                                                    <div class="product-content-item__action">
+                                                        <span class="product-content-item__like product-content-item__like--liked">
+                                                            <i class="product-content-item__like-icon--no fa-regular fa-heart"></i>
+                                                            <i class="product-content-item__like-icon--yes fa-solid fa-heart"></i>
+                                                        </span>
+                                                        <div class="product-content-item__rating">
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-content-item__sale-off">
+                                                        <span class="product-content-item__sale-off-percen">Giảm 12%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="gird__column-2-5">
+                                            <div class="gird__column-2-5--container">
+                                                <div class="product-content-item">
+                                                    <a href="" class="product-content-item__link">
+                                                        <img src="//bizweb.dktcdn.net/thumb/large/100/502/883/products/230628111910-iphone-14-pro-128gb-4ac4effe-2807-4dff-b75e-144f7f5f9d82-cfad8ff4-5695-4438-b616-f5002d5f9af9-8484545e-c38b-4a44-b4fb-756214830766.png?v=1700193801040" alt="" class="product-content-item__img">
+                                                    </a>
+                                                    <div class="product-content-item__cart">
+                                                        <button class="product-content-item__cart-btn">
+                                                            <i class="product-content-item__cart-link fa-solid fa-basket-shopping"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content-item__info">
+                                                    <a href="" class="product-content-item__name">
+                                                        <h5>
+                                                            iPhone 14 Pro 1TB - Chính hãng VN/A
+                                                        </h5>
+                                                    </a>
+                                                    <div class="product-content-item__price">
+                                                        <span class="product-content-item__price-new">30.990.000₫</span>
+                                                        <span class="product-content-item__price-old">46.990.000₫</span>
+                                                    </div>
+                                                    <div class="product-content-item__policy">
+                                                        <p>Bảo hành chính hãng Apple 12 tháng</p>
+                                                    </div>
+                                                    <div class="product-content-item__action">
+                                                        <span class="product-content-item__like product-content-item__like--liked">
+                                                            <i class="product-content-item__like-icon--no fa-regular fa-heart"></i>
+                                                            <i class="product-content-item__like-icon--yes fa-solid fa-heart"></i>
+                                                        </span>
+                                                        <div class="product-content-item__rating">
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-content-item__sale-off">
+                                                        <span class="product-content-item__sale-off-percen">Giảm 34%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="gird__column-2-5">
+                                            <div class="gird__column-2-5--container">
+                                                <div class="product-content-item">
+                                                    <a href="" class="product-content-item__link">
+                                                        <img src="//bizweb.dktcdn.net/thumb/large/100/502/883/products/230623042750-iphone-14-128g-yell-27dbe94f-2c2e-4162-93a7-136258991f30-c6eac9b4-320f-4858-bc0a-8c096070d847.png?v=1700192393597" alt="" class="product-content-item__img">
+                                                    </a>
+                                                    <div class="product-content-item__cart">
+                                                        <button class="product-content-item__cart-btn">
+                                                            <i class="product-content-item__cart-link fa-solid fa-basket-shopping"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content-item__info">
+                                                    <a href="" class="product-content-item__name">
+                                                        <h5>
+                                                            iPhone 14 512GB - Chính hãng VN/A
+                                                        </h5>
+                                                    </a>
+                                                    <div class="product-content-item__price">
+                                                        <span class="product-content-item__price-new">25.890.000₫</span>
+                                                        <span class="product-content-item__price-old">33.990.000₫</span>
+                                                    </div>
+                                                    <div class="product-content-item__policy">
+                                                        <p>Bảo hành chính hãng Apple 12 tháng</p>
+                                                    </div>
+                                                    <div class="product-content-item__action">
+                                                        <span class="product-content-item__like product-content-item__like--liked">
+                                                            <i class="product-content-item__like-icon--no fa-regular fa-heart"></i>
+                                                            <i class="product-content-item__like-icon--yes fa-solid fa-heart"></i>
+                                                        </span>
+                                                        <div class="product-content-item__rating">
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-content-item__sale-off">
+                                                        <span class="product-content-item__sale-off-percen">Giảm 24%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content__more">
+                            <a href="" class="see-more">
+                                Xem toàn bộ sản phẩm
+                                <i class="see-more-icon fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="products">
+                <div class="container">
+                    <div class="section__products">
+                        <h3 class="section__products-title">
+                            CÙNG PHÂN KHÚC GIÁ
+                        </h3>
+                        <div class="gird__column-12">
+                            <div class="product-outstanding">
+                                <div class="product-outstanding__row">
+                                    <div class="gird__column-2-5">
+                                            <div class="gird__column-2-5--container">
+                                                <div class="product-content-item">
+                                                    <a href="" class="product-content-item__link">
+                                                        <img src="//bizweb.dktcdn.net/thumb/large/100/502/883/products/230913060438-iphone-15-pro-max-b-1-a6e28d40-f9e3-483f-ae8b-39d2fc6ba938.png?v=1700195661260" alt="" class="product-content-item__img">
+                                                    </a>
+                                                    <div class="product-content-item__cart">
+                                                        <button class="product-content-item__cart-btn">
+                                                            <i class="product-content-item__cart-link fa-solid fa-basket-shopping"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content-item__info">
+                                                    <a href="" class="product-content-item__name">
+                                                        <h5>
+                                                            iPhone 15 Pro Max 512GB - Chính hãng VN/A
+                                                        </h5>
+                                                    </a>
+                                                    <div class="product-content-item__price">
+                                                        <span class="product-content-item__price-new">39.390.000₫</span>
+                                                        <span class="product-content-item__price-old">43.990.000₫</span>
+                                                    </div>
+                                                    <div class="product-content-item__policy">
+                                                        <p>Bảo hành chính hãng Apple 12 tháng</p>
+                                                    </div>
+                                                    <div class="product-content-item__action">
+                                                        <span class="product-content-item__like product-content-item__like--liked">
+                                                            <i class="product-content-item__like-icon--no fa-regular fa-heart"></i>
+                                                            <i class="product-content-item__like-icon--yes fa-solid fa-heart"></i>
+                                                        </span>
+                                                        <div class="product-content-item__rating">
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-content-item__sale-off">
+                                                        <span class="product-content-item__sale-off-percen">Giảm 10%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="gird__column-2-5">
+                                            <div class="gird__column-2-5--container">
+                                                <div class="product-content-item">
+                                                    <a href="" class="product-content-item__link">
+                                                        <img src="//bizweb.dktcdn.net/thumb/large/100/502/883/products/230628110910-iphone-14-pro-max-1-1bad29d8-76a1-4f4a-9bc2-93eee6a2d7ea-61e61768-f143-48bd-a884-d552977c5f1c.png?v=1700193758290" alt="" class="product-content-item__img">
+                                                    </a>
+                                                    <div class="product-content-item__cart">
+                                                        <button class="product-content-item__cart-btn">
+                                                            <i class="product-content-item__cart-link fa-solid fa-basket-shopping"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content-item__info">
+                                                    <a href="" class="product-content-item__name">
+                                                        <h5>
+                                                            iPhone 14 Pro Max 1TB - Chính hãng VN/A
+                                                        </h5>
+                                                    </a>
+                                                    <div class="product-content-item__price">
+                                                        <span class="product-content-item__price-new">37.490.000₫</span>
+                                                        <span class="product-content-item__price-old">49.990.000₫</span>
+                                                    </div>
+                                                    <div class="product-content-item__policy">
+                                                        <p>Bảo hành chính hãng Apple 12 tháng</p>
+                                                    </div>
+                                                    <div class="product-content-item__action">
+                                                        <span class="product-content-item__like product-content-item__like--liked">
+                                                            <i class="product-content-item__like-icon--no fa-regular fa-heart"></i>
+                                                            <i class="product-content-item__like-icon--yes fa-solid fa-heart"></i>
+                                                        </span>
+                                                        <div class="product-content-item__rating">
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-content-item__sale-off">
+                                                        <span class="product-content-item__sale-off-percen">Giảm 25%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="gird__column-2-5">
+                                            <div class="gird__column-2-5--container">
+                                                <div class="product-content-item">
+                                                    <a href="" class="product-content-item__link">
+                                                        <img src="//bizweb.dktcdn.net/thumb/large/100/502/883/products/230913033227-iphone-15-pink-1-e946aba7-7c98-4d68-9405-66868d14acc4-6844ee0e-e88d-40fd-bce7-c57f26f49a77.png?v=1700194183203" alt="" class="product-content-item__img">
+                                                    </a>
+                                                    <div class="product-content-item__cart">
+                                                        <button class="product-content-item__cart-btn">
+                                                            <i class="product-content-item__cart-link fa-solid fa-basket-shopping"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content-item__info">
+                                                    <a href="" class="product-content-item__name">
+                                                        <h5>
+                                                            iPhone 15 512GB - Chính hãng VN/A
+                                                        </h5>
+                                                    </a>
+                                                    <div class="product-content-item__price">
+                                                        <span class="product-content-item__price-new">29.990.000₫</span>
+                                                        <span class="product-content-item__price-old">33.990.000₫</span>
+                                                    </div>
+                                                    <div class="product-content-item__policy">
+                                                        <p>Được hỗ trợ 1 đổi 1 trong 30 ngày nếu có lỗi từ nhà sản xuất</p>
+                                                    </div>
+                                                    <div class="product-content-item__action">
+                                                        <span class="product-content-item__like product-content-item__like--liked">
+                                                            <i class="product-content-item__like-icon--no fa-regular fa-heart"></i>
+                                                            <i class="product-content-item__like-icon--yes fa-solid fa-heart"></i>
+                                                        </span>
+                                                        <div class="product-content-item__rating">
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-content-item__sale-off">
+                                                        <span class="product-content-item__sale-off-percen">Giảm 12%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="gird__column-2-5">
+                                            <div class="gird__column-2-5--container">
+                                                <div class="product-content-item">
+                                                    <a href="" class="product-content-item__link">
+                                                        <img src="//bizweb.dktcdn.net/thumb/large/100/502/883/products/230628111910-iphone-14-pro-128gb-4ac4effe-2807-4dff-b75e-144f7f5f9d82-cfad8ff4-5695-4438-b616-f5002d5f9af9-8484545e-c38b-4a44-b4fb-756214830766.png?v=1700193801040" alt="" class="product-content-item__img">
+                                                    </a>
+                                                    <div class="product-content-item__cart">
+                                                        <button class="product-content-item__cart-btn">
+                                                            <i class="product-content-item__cart-link fa-solid fa-basket-shopping"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content-item__info">
+                                                    <a href="" class="product-content-item__name">
+                                                        <h5>
+                                                            iPhone 14 Pro 1TB - Chính hãng VN/A
+                                                        </h5>
+                                                    </a>
+                                                    <div class="product-content-item__price">
+                                                        <span class="product-content-item__price-new">30.990.000₫</span>
+                                                        <span class="product-content-item__price-old">46.990.000₫</span>
+                                                    </div>
+                                                    <div class="product-content-item__policy">
+                                                        <p>Bảo hành chính hãng Apple 12 tháng</p>
+                                                    </div>
+                                                    <div class="product-content-item__action">
+                                                        <span class="product-content-item__like product-content-item__like--liked">
+                                                            <i class="product-content-item__like-icon--no fa-regular fa-heart"></i>
+                                                            <i class="product-content-item__like-icon--yes fa-solid fa-heart"></i>
+                                                        </span>
+                                                        <div class="product-content-item__rating">
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-content-item__sale-off">
+                                                        <span class="product-content-item__sale-off-percen">Giảm 34%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="gird__column-2-5">
+                                            <div class="gird__column-2-5--container">
+                                                <div class="product-content-item">
+                                                    <a href="" class="product-content-item__link">
+                                                        <img src="//bizweb.dktcdn.net/thumb/large/100/502/883/products/230623042750-iphone-14-128g-yell-27dbe94f-2c2e-4162-93a7-136258991f30-c6eac9b4-320f-4858-bc0a-8c096070d847.png?v=1700192393597" alt="" class="product-content-item__img">
+                                                    </a>
+                                                    <div class="product-content-item__cart">
+                                                        <button class="product-content-item__cart-btn">
+                                                            <i class="product-content-item__cart-link fa-solid fa-basket-shopping"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content-item__info">
+                                                    <a href="" class="product-content-item__name">
+                                                        <h5>
+                                                            iPhone 14 512GB - Chính hãng VN/A
+                                                        </h5>
+                                                    </a>
+                                                    <div class="product-content-item__price">
+                                                        <span class="product-content-item__price-new">25.890.000₫</span>
+                                                        <span class="product-content-item__price-old">33.990.000₫</span>
+                                                    </div>
+                                                    <div class="product-content-item__policy">
+                                                        <p>Bảo hành chính hãng Apple 12 tháng</p>
+                                                    </div>
+                                                    <div class="product-content-item__action">
+                                                        <span class="product-content-item__like product-content-item__like--liked">
+                                                            <i class="product-content-item__like-icon--no fa-regular fa-heart"></i>
+                                                            <i class="product-content-item__like-icon--yes fa-solid fa-heart"></i>
+                                                        </span>
+                                                        <div class="product-content-item__rating">
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                            <i class="product-content-item__rating-icon fa-solid fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-content-item__sale-off">
+                                                        <span class="product-content-item__sale-off-percen">Giảm 24%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content__more">
+                            <a href="" class="see-more">
+                                Xem toàn bộ sản phẩm
+                                <i class="see-more-icon fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="top__footer">
+                <div class="top__footer-container">
+                    <div class="footer-row">
+                        <div class="footer-col-1">
+                            <form action="" class="footer__summit">
+                                <input type="email" class="footer__mail" placeholder="Nhập email nhận tin khuyến mãi">
+                                <button class="footer__btn">
+                                    ĐĂNG KÝ
+                                </button>
+                            </form>
+                        </div>
+                        <div class="footer-col-2">
+                            <div class="footer__social">
+                                <span>Kết nối với chúng tôi:</span>
+                                <ul class="footer__social-list">
+                                    <li class="footer__social-item">
+                                        <a href="" class="footer__social-item--link">
+                                            <img src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/zalo.png?1705386481095" alt="zalo" class="footer__social-item--img">
+                                        </a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a href="" class="footer__social-item--link">
+                                            <img src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/facebook.png?1705386481095" alt="facebook" class="footer__social-item--img">
+                                        </a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a href="" class="footer__social-item--link">
+                                            <img src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/youtube.png?1705386481095" alt="youtube" class="footer__social-item--img">
+                                        </a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a href="" class="footer__social-item--link">
+                                            <img src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/google.png?1705386481095" alt="email" class="footer__social-item--img">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top__footer2">
+                <div class="top__footer-container">
+                    <div class="blog-background">
+                        <div class="footer__row">
+                            <div class="footer-col">
+                                <div class="footer__policy">
+                                    <div class="footer__policy-list">
+                                        <div class="footer__policy-list--item">
+                                            <img src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/chinhsach_footer_1.png?1705386481095" alt="" class="footer__policy-list--img">
+                                            <br>
+                                            <span>Thanh toán khi nhận hàng</span>
+                                        </div>
+                                        <div class="footer__policy-list--item">
+                                            <img src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/chinhsach_footer_2.png?1705386481095" alt="" class="footer__policy-list--img">
+                                            <br>
+                                            <span>Cam kết uy tín hàng chính hãng</span>
+                                        </div>
+                                        <div class="footer__policy-list--item">
+                                            <img src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/chinhsach_footer_3.png?1705386481095" alt="" class="footer__policy-list--img" height="54" width="auto">
+                                            <br>
+                                            <span>Giao hàng miễn phí 2h</span>
+                                        </div>
+                                        <div class="footer__policy-list--item">
+                                            <img src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/chinhsach_footer_4.png?1705386481095" alt="" class="footer__policy-list--img">
+                                            <br>
+                                            <span>14 ngày đổi trả miễn phí</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-col">
+                                <ul class="footer__hotline">
+                                    <li>
+                                        <div class="footer__hotline-title">
+                                            <i class="footer__hotline-title--icon fa-solid fa-circle-question"></i>
+                                            KHIẾU NẠI, GÓP Ý
+                                        </div>
+                                        <span>19006750</span>
+                                    </li>
+                                    <li>
+                                        <div class="footer__hotline-title">
+                                            <i class="footer__hotline-title--icon fa-solid fa-phone"></i>
+                                            TƯ VẤN
+                                        </div>
+                                        <span>19006750</span>
+                                    </li>
+                                    <li>
+                                        <div class="footer__hotline-title">
+                                            <i class="footer__hotline-title--icon fa-solid fa-map-location-dot"></i>
+                                            TÌM CHI NHÁNH
+                                        </div>
+                                        <a href="#">
+                                            <span>Hệ thống Dola</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mid__footer">
+                <div class="mid__footer-container">
+                    <div class="mid__footer-row">
+                        <div class="mid__footer-col">
+                            <h4 class="mid__footer-title-menu">CHÍNH SÁCH</h4>
+                            <ul class="mid__footer-list-menu">
+                                <a href="#" class="mid__footer-link">
+                                    <li class="mid__footer-item-menu">Chính sách thành viên</li>
+                                </a> 
+                                <a href="#" class="mid__footer-link">
+                                    <li class="mid__footer-item-menu">Chính sách thanh toán</li>
+                                </a> 
+                                <a href="#" class="mid__footer-link">
+                                    <li class="mid__footer-item-menu">Chính sách bảo hành và bảo trì</li>
+                                </a> 
+                                <a href="#" class="mid__footer-link">
+                                    <li class="mid__footer-item-menu">Chính sách vận chuyển vào giao nhận</li>
+                                </a> 
+                                <a href="#" class="mid__footer-link">
+                                    <li class="mid__footer-item-menu">Bảo mật thông tin cá nhân</li>
+                                </a> 
+                            </ul>
+                        </div>
+                        <div class="mid__footer-col">
+                            <h4 class="mid__footer-title-menu">HỖ TRỢ</h4>
+                            <ul class="mid__footer-list-menu">
+                                <a href="#" class="mid__footer-link">
+                                    <li class="mid__footer-item-menu">Hướng dẫn mua hàng</li>
+                                </a> 
+                                <a href="#" class="mid__footer-link">
+                                    <li class="mid__footer-item-menu">Hướng dẫn thanh toán</li>
+                                </a> 
+                                <a href="#" class="mid__footer-link">
+                                    <li class="mid__footer-item-menu">Hướng dẫn giao nhận</li>
+                                </a> 
+                                <a href="#" class="mid__footer-link">
+                                    <li class="mid__footer-item-menu">Hướng dẫn giao nhận</li>
+                                </a> 
+                                <a href="#" class="mid__footer-link">
+                                    <li class="mid__footer-item-menu">Câu hỏi thường gặp</li>
+                                </a> 
+                            </ul>
+                        </div>
+                        <div class="mid__footer-col">
+                            <h4 class="mid__footer-title-menu">HỖ TRỢ</h4>
+                            <ul class="mid__footer-list-menu">
+                                <a href="#" class="mid__footer-link">
+                                    <li class="mid__footer-item-menu">Hệ thống cửa hàng</li>
+                                </a> 
+                                <a href="#" class="mid__footer-link">
+                                    <li class="mid__footer-item-menu">Đăng nhập tài khoản</li>
+                                </a> 
+                                <a href="#" class="mid__footer-link">
+                                    <li class="mid__footer-item-menu">Liên hệ</li>
+                                </a> 
+                                <a href="#" class="mid__footer-link">
+                                    <li class="mid__footer-item-menu">Sản phẩm yêu thích</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="mid__footer-col">
+                            <h4 class="mid__footer-title-menu">DANH MỤC NỔI BẬT</h4>
+                            <ul class="mid__footer-list-menu">
+                                <a href="#" class="mid__footer-link">
+                                    <li class="mid__footer-item-menu">iPhone</li>
+                                </a> 
+                                <a href="#" class="mid__footer-link">
+                                    <li class="mid__footer-item-menu">iPad</li>
+                                </a> 
+                                <a href="#" class="mid__footer-link">
+                                    <li class="mid__footer-item-menu">Watch</li>
+                                </a> 
+                                <a href="#" class="mid__footer-link">
+                                    <li class="mid__footer-item-menu">Mac</li>
+                                </a> 
+                                <a href="#" class="mid__footer-link">
+                                    <li class="mid__footer-item-menu">AirPods</li>
+                                </a> 
+                                <a href="#" class="mid__footer-link">
+                                    <li class="mid__footer-item-menu">Âm thanh</li>
+                                </a> 
+                                <a href="#" class="mid__footer-link">
+                                    <li class="mid__footer-item-menu">Phụ kiện</li>
+                                </a> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom__footer">
+                <div class="bottom__footer-container">
+                    <div class="bottom__footer-row">
+                        <div class="bottom__footer-col-1">
+                            <a href="#" class="bottom__footer-link">
+                                <img src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/logo-ft.png?1705386481095" alt="logo" class="bottom__footer-logo">
+                            </a>
+                            <div class="bottom__footer-content">
+                                Hệ thống bán lẻ smartphone, máy tính bảng, MacBook, thiết bị công nghệ chính hãng với giá tốt, có trả góp 0%, giao hàng nhanh miễn phí.
+                            </div>
+                            <div class="bottom__footer-address">
+                                <ul>
+                                    <li>
+                                        <b>Địa chỉ:</b>
+                                        <span>Đội 3, Quy Hậu, Liên Thủy, Lệ Thủy, Quảng Bình</span>
+                                    </li>
+                                    <li>
+                                        <b>Điện thoại:</b>
+                                        <span>0392405260</span>
+                                    </li>
+                                    <li>
+                                        <b>Email:</b>
+                                        <span>anhcanall2611@gmail.com</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bottom__footer-col-2">
+                            <h4 class="bottom__footer-title">MẠNG XÃ HỘI</h4>
+                            <ul class="bottom__footer-list">
+                                <li class="bottom__footer-item">
+                                    <span class="li-title">MUA ONLINE (08:00 - 21:00 mỗi ngày)</span>
+                                    <span class="li-hotline">19006750</span>
+                                    <span class="li-content">Tất cả các ngày trong tuần (Trừ tết Âm Lịch)</span>
+                                </li>
+                                <li class="bottom__footer-item">
+                                    <span class="li-title">GÓP Ý & KHIẾU NẠI (08:30 - 20:30)</span>
+                                    <span class="li-hotline">19006750</span>
+                                    <span class="li-content">Tất cả các ngày trong tuần (Trừ tết Âm Lịch)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bottom__footer-col-3">
+                            <h4 class="bottom__footer-title">LIÊN KẾT SÀN</h4>
+                            <ul class="bottom__footer-social">
+                                <li>
+                                    <a href="#">
+                                        <img src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/shopee.png?1705386481095" alt="Shoppe" class="bottom__footer-logo">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/lazada.png?1705386481095" alt="Lazada" class="bottom__footer-logo">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/tiki.png?1705386481095" alt="Tiki" class="bottom__footer-logo">
+                                    </a>
+                                </li>
+                            </ul>
+                            <h4 class="bottom__footer-title">HÌNH THỨC THANH TOÁN</h4>
+                            <ul class="bottom__footer-pay">
+                                <li>
+                                    <img src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/payment_1.png?1705386481095" alt="tienmat" class="bottom__footer-logo">
+                                </li>
+                                <li>
+                                    <img src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/payment_2.png?1705386481095" alt="chuyenkhoan" class="bottom__footer-logo">
+                                </li>
+                                <li>
+                                    <img src="//bizweb.dktcdn.net/100/502/883/themes/934584/assets/payment_3.png?1705386481095" alt="visa" class="bottom__footer-logo">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="final__bottom">
+                <div class="final__bottom-content">
+                    Bản quyền thuộc về 
+                    <span>Võ Trường Sơn</span>
+                </div>
+            </div>
+        </footer>
+        <a href="#" id="backToTopBtn" class="backtop show">
+            <i class="backtop__icon fa-solid fa-chevron-up"></i>
+        </a>
+        <script>
+            window.addEventListener("scroll", function () {
+                var backToTopButton = document.getElementById("backToTopBtn");
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    backToTopButton.classList.add("show");
+                } else {
+                    backToTopButton.classList.remove("show");
+                }
+            });
+
+        document.getElementById("backToTopBtn").addEventListener("click", function () {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+        });
+        </script>
+    </div>
+</body>

@@ -1,0 +1,23 @@
+
+.blog__introduce {
+    padding: 5px 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0px 2px 0 rgba(60,64,67,0.1), 0 0px 6px 0px rgba(60,64,67,0.25);
+}
+
+.blog__introduce-title h1 {
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+
+.blog__introduce-content {
+    min-height: 400px;
+}
+
+.blog__introduce-content p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+}
